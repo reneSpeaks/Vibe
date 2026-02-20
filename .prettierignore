@@ -1,0 +1,9 @@
+package*.json
+dist
+coverage
+
+**/node_modules/*
+**/.vscode/*
+**/.idea/*
+
+*.md

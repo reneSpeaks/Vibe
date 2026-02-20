@@ -1,0 +1,16 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    René Weiberlenn -- Passionate Web Developer -- https://www.linkedin.com/in/rene-weiberlenn/
+
+# THANKS
+
+    Coffee.
+
+# TECHNOLOGY COLOPHON
+
+    CSS3, HTML5, Javascript,
+    Typescript, Tailwind, React.js,
+    Lottie, Vite, ESLint

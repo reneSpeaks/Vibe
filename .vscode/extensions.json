@@ -1,0 +1,12 @@
+{
+	"recommendations": [
+		"dbaeumer.vscode-eslint",
+		"esbenp.prettier-vscode",
+		"vunguyentuan.vscode-css-variables",
+		"bradlc.vscode-tailwindcss",
+		"christian-kohler.npm-intellisense",
+		"orta.vscode-jest",
+		"EditorConfig.EditorConfig",
+		"gruntfuggly.todo-tree"
+	]
+}
