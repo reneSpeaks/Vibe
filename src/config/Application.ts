@@ -1,1 +1,1 @@
-export type ApplicationState = 'Default' | 'MobileMenu' | 'Loading' | 'Error';
+export type ApplicationState = 'Default' | 'Settings' | 'Loading' | 'Error';

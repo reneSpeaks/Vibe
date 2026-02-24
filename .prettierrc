@@ -7,6 +7,5 @@
 	"tabWidth": 4,
 	"printWidth": 140,
 	"bracketSpacing": true,
-	"bracketSameLine": true,
-	"plugins": ["prettier-plugin-tailwindcss"]
+	"bracketSameLine": true
 }

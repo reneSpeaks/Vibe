@@ -1,7 +1,10 @@
+import ProgressBar from '@components/ProgressBar';
+
 export default function Home() {
 	return (
-		<div>
-			<h1>Home of Vibe</h1>
-		</div>
+		<section className="flex w-full flex-col items-center">
+			<h1 className="text-4xl font-bold">How are you feeling?</h1>
+			<ProgressBar />
+		</section>
 	);
 }

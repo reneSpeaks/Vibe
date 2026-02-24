@@ -1,6 +1,6 @@
 import { useApplicationState } from '@hooks/useApplicationState';
 import HeaderDate from '@components/HeaderDate';
-import { FaUserLarge } from 'react-icons/fa6';
+import { IUser } from '@assets/icons';
 
 export default function Header() {
 	const { setApplicationState } = useApplicationState();
@@ -9,7 +9,7 @@ export default function Header() {
 		<>
 			<header className="header">
 				<HeaderDate />
-				<FaUserLarge className="header--profile" onClick={() => setApplicationState('MobileMenu')} />
+				<IUser className="header--profile" onClick={() => setApplicationState('Settings')} />
 			</header>
 			<div className="header--spacer" />
 		</>

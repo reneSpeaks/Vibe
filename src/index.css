@@ -1,5 +1,3 @@
-@import 'tailwindcss';
-
 @font-face {
 	font-family: 'League';
 	src: url('@assets/fonts/LeagueSpartan.ttf') format('truetype');
@@ -79,8 +77,6 @@
 }
 
 .header--profile {
-	width: 1.25rem;
-	height: 1.25rem;
 	cursor: pointer;
 }
 
@@ -100,7 +96,7 @@
 	}
 }
 
-.mobile--profile {
+.settings {
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -118,7 +114,7 @@
 	}
 }
 
-.mobile--profile--container {
+.settings--container {
 	width: min(100% - 2rem, 1400px);
 	margin-inline: auto;
 	padding: clamp(1.5rem, 1vw, 4rem);
@@ -129,14 +125,56 @@
 		font-weight: var(--font-semibold);
 		line-height: var(--leading-tight);
 	}
+
+	h3 {
+		font-size: var(--text-xl);
+		font-weight: var(--font-semibold);
+		line-height: var(--leading-tight);
+		margin: 2rem 0 1rem 0;
+	}
 }
 
-.mobile--profile--header {
+.settings--header {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	margin-bottom: 1.5rem;
 
 	span {
 		cursor: pointer;
+	}
+}
+
+.settings--close {
+	cursor: pointer;
+}
+
+.settings--content {
+	display: flex;
+	flex-direction: column;
+	padding: 0;
+}
+
+.settings--content--item {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	cursor: pointer;
+	border-top: #18181860 1px solid;
+	padding: 1rem;
+	font-weight: var(--font-semibold);
+
+	&:last-child {
+		border-bottom: #18181860 1px solid;
+	}
+
+	p {
+		display: flex;
+		flex-direction: row;
+		gap: 1rem;
+
+		span {
+			transform: translateY(0.125rem);
+		}
 	}
 }
