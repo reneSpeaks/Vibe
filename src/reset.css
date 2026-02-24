@@ -57,6 +57,20 @@ h6 {
 	text-wrap: balance;
 }
 
+button,
+input[type='button'],
+input[type='submit'],
+input[type='reset'] {
+	background: none; /* Remove background */
+	border: none; /* Remove border */
+	padding: 0; /* Remove padding */
+	margin: 0; /* Remove margin */
+	font: inherit; /* Inherit font styles */
+	color: inherit; /* Inherit text color */
+	cursor: pointer; /* Change cursor to pointer */
+	outline: none; /* Remove outline */
+}
+
 #root,
 #__next {
 	isolation: isolate;

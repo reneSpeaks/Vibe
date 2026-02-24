@@ -8,7 +8,7 @@ export const Navigation = [
 		icon: 'IBell'
 	},
 	{
-		name: 'Check-in options',
+		name: 'Connections',
 		icon: 'IConnect'
 	},
 	{

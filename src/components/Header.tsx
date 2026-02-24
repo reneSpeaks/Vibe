@@ -11,7 +11,6 @@ export default function Header() {
 				<HeaderDate />
 				<IUser className="header--profile" onClick={() => setApplicationState('Settings')} />
 			</header>
-			<div className="header--spacer" />
 		</>
 	);
 }
