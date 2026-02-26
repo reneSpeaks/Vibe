@@ -1,8 +1,8 @@
 export const ProgressBarConfig = {
-	radius: 45,
-	strokeWidth: 8,
-	outerR: 45 + 8 / 2,
-	innerR: 45 - 8 / 2
+	radius: 42,
+	strokeWidth: 9,
+	outerR: 42 + 9 / 2,
+	innerR: 42 - 9 / 2
 };
 
 export const ProgressBarRingPath = [
