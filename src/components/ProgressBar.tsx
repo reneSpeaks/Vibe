@@ -36,7 +36,6 @@ export default function ProgressBar() {
 		y2: 50 + 30 * Math.sin((end / 100) * 2 * Math.PI)
 	});
 
-	const revealOffset = 5;
 	const totalArc = n === 1 ? mainSize : 100;
 
 	return (
@@ -64,9 +63,11 @@ export default function ProgressBar() {
 							fill="none"
 							pathLength="100"
 							strokeDasharray={`${loaded ? totalArc : 0} 100`}
-							strokeDashoffset={n > 1 ? -revealOffset : 0}
+							strokeDashoffset={loaded ? 0 : -totalArc}
 							transform="rotate(-90, 50, 50)"
-							style={{ transition: `stroke-dasharray ${fillDuration}s ease-out` }}
+							style={{
+								transition: `stroke-dasharray ${fillDuration}s ease-out, stroke-dashoffset ${fillDuration}s ease-out`
+							}}
 						/>
 					</mask>
 
@@ -147,6 +148,26 @@ export default function ProgressBar() {
 								/>
 							) : null;
 
+						const shadowArc = (
+							<circle
+								key="end-shadow-arc"
+								stroke="#181818"
+								strokeOpacity={0.5}
+								strokeWidth={ProgressBarConfig.strokeWidth}
+								cx="50"
+								cy="50"
+								r={ProgressBarConfig.radius}
+								fill="none"
+								pathLength="100"
+								strokeDasharray="1 100"
+								strokeDashoffset={0}
+								transform="rotate(-90, 50, 50)"
+								filter="url(#end-shadow)"
+								mask="url(#ring-mask)"
+							/>
+						);
+
+						if (isLast) return [shadowArc, mainCircle];
 						return [mainCircle, transCircle].filter(Boolean);
 					})}
 				</g>
